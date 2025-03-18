@@ -5,7 +5,7 @@ public class Book {
     String title;
     String author;
     String isBn;
-    Boolean isBorrowed;
+    Boolean isBorrowed=false;
 
     static {
         totalBooks=0;
@@ -55,6 +55,11 @@ public class Book {
 
 
     public static void main(String[] args) {
+
+        Book designOfThings=new Book("Design","Author","1");
+        System.out.println(designOfThings.author);
+        designOfThings.borrowBook();
+
 
 
 
