@@ -11,6 +11,10 @@ public class Book {
         totalBooks=0;
     }
 
+    {
+        totalBooks++;
+    }
+
     Book(String title,String author,String isBn){
 
         this.title=title;
@@ -21,9 +25,7 @@ public class Book {
 
     Book(){};
 
-    {
-        totalBooks++;
-    }
+
 
 
     public static int getTotalBooks(){
